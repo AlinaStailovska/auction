@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700');
+
+* {
+	box-sizing: border-box;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; 
+}
+
+html, body {
+	height: 100%;
+	background-color: #fff;
+	font-family: Arial, sans-serif;
+	// background-color: #028DEA;
+}
+.img {
+	width: 100px;
+	height: 100px;
+	background: url(../img/logo.png);
+	// background-size: cover;
+	background-repeat: no-repeat;
+	margin: 10px;
+	display: inline-block;
+}
+.information {
+	display: inline-block;
+	text-align: center;
+
+	// font-size: 50px;
+	&__text {
+		font-size: 20px;
+	}
+	&__title {
+		display: inline-block;
+		font-size: 40px;
+		
+	}
+	
+}
+.container {
+	padding: 30px;
+}
+.lots {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+
+}
+.lot {
+	padding: 10px 10px;
+	margin: 20px 20px 20px 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.9);
+	width: 45%;
+	display: inline-block;
+	background-color: #F5F5F5;
+	&:hover,
+	&:active {
+		box-shadow: 0 0 20px #0000FF;
+	}
+	&--grey {
+		// border: 1px solid #fff;
+
+	}
+
+	&__foto {
+		width: 200px;
+		height: 200px;
+		display: inline-block;	
+		border-radius: 50%;
+		box-shadow: 0 0 20px rgba(0,0,0,0.9);
+		float: left;	
+		margin: 0 20px;
+	}
+	&__title {
+		display: inline-block;
+		font-size: 20px;
+		color: #898989;
+		&--grey{
+			color: #898989;
+		}
+		
+	}
+	&__text {
+		margin: 20px;
+			}
+	
+	.button {
+		width: 50%;
+		height: 50px;
+
+		&__button {
+			background-color: red;
+			border: 1px solid red;
+			width: 100px;
+			height: 30px;
+			&:hover {
+				opacity: 0.7;
+			}
+
+		}
+		&__price {
+			width: 150px;
+			height: 25px;
+		}
+	}
+}
